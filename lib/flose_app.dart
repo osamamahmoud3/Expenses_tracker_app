@@ -12,7 +12,7 @@ class FloseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: AppTheme.lightTheme,
+        theme: AppTheme.darkTheme,
         home: BlocProvider(
           create: (context) => FolseCubit(FirebaseExpensesRepo())
             ..getExpenses()
